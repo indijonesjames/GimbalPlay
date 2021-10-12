@@ -21,7 +21,7 @@ In addition it has two additional servos for lens controlled that they are not b
 ### Key Features
 
 - The communication with the servos is done via USB-COM. A SerialHandle file is created at the beginning of the progam. It is important that the right COM port is specified. 
-- To control the camera, the FLIR SDK must eb installed. FlyCapture is the lirbary imported, and it currently does not support live video.
+- To control the camera, the FLIR SDK must be installed.
 - All the Image Processing is done using OpenCV.
 - There are 3 ways to tune the accuracy of the program:
 	- The parameters minArea and rratio defined in const.cpp. MinArea relates to the minimun area of the contour to be considered a new obkject instead of noise. Rratio is used to compare similarities, hihger ratio, better perfomance but a bigger chance of missing objects.
@@ -37,6 +37,5 @@ In addition it has two additional servos for lens controlled that they are not b
 
 ### Future Work
 
-The scene is currently divided in 16 quadrants. If this number increases more, the final result would be better. Among the 16 quadrants only 6 are actually scanned since there is a lot of overlapping between them. 
-
-However, because of the fixture, the range of motion of the Gimbal is limiited. This could be improved as well.
+The scene is currently divided into 16 quadrants. If this number increases more the final result would be better. Among the 16 quadrants only 6 are actually scanned since there is a lot of overlapping between them. 
+ 
